@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { DataService } from '../data.service';
+import { HttpService } from '../http.service';
+
 
 @Component({
   selector: 'app-product-details',
@@ -10,18 +12,19 @@ import { DataService } from '../data.service';
 export class ProductDetailsComponent implements OnInit {
   id;
   result;
-  constructor(private dataservice: DataService, private route:ActivatedRoute) { 
+  constructor(private dataservice: DataService, private route:ActivatedRoute, private service:HttpService,private router:Router) { 
   }
 
   ngOnInit() {
     this.route.paramMap.subscribe((params : ParamMap) => {
       this.id=params.get('id');
   });
-  this.dataservice.getProductById(this.id).subscribe(response => {
+  this.dataservice.getProductsById(this.id).subscribe(response => {
     console.log(response);
-    this.result=response[0];
+    this.result=response;
     console.log(this.result);
 
     });
 }
+
 }

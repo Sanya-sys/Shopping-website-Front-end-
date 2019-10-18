@@ -11,14 +11,9 @@
                   <li (click)= onselect2() class="nav-item active">
                     <a class="nav-link" href="home"> <p>Home</p> <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><p>About Us</p></a>
-                  </li>
-                  <li class='nav-item'>
-                    <a class="nav-link" href="#"><p>Contact Us</p></a>
-                  </li>
+                  
                   <li (click)="onselect3()"class="nav-item">
-                    <a class="nav-link" href="login"><p>Login/Register</p></a>
+                    <a class="nav-link" href="signup"><p>Register</p></a>
                   </li>
                 </ul>
               </div>
@@ -44,7 +39,7 @@
                         <h5 class="card-title text-center">Sign In</h5>
                         <form class="form-signin">
                              <div class="form-group">
-                                  <input type="email"  class="form-control" placeholder="Email Address"title="exapmle@domain.com" name="Email" [(ngModel)]="username" required>
+                                  <input type="email"  class="form-control" placeholder="Enter Your Username"title="exapmle@domain.com" name="Email" [(ngModel)]="username" required>
                              </div>
         
                             <div class="form-group">

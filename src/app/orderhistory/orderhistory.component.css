@@ -1,4 +1,7 @@
-
+body{
+    background-image:url("https://steamuserimages-a.akamaihd.net/ugc/269464574501206093/D6BEAD6CD17F75F2177AC93D8C71EFC732E8066F/");
+    height:1400px;
+}
 .jh
 {
     width:100%;
@@ -43,10 +46,7 @@ background-color: white;
     margin-top: 20px;
     background-color: #666666;
   }
-  body{
-    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/269464574501206093/D6BEAD6CD17F75F2177AC93D8C71EFC732E8066F/");
-      height:900px;
-  }
+ 
   .d
   {
       display:flex;
@@ -59,7 +59,6 @@ background-color: white;
   .k
   {
       background-color:#e6e6e6;
-     
   }
   .h
   {
@@ -185,4 +184,7 @@ background-color: white;
     height:40px;
     margin-top: 20px;
   
+  }
+  .ko{
+margin-left:440px;
   }

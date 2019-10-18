@@ -1,19 +1,23 @@
-<app-nav-bar></app-nav-bar>
-  <form>
-  <div class="input-group mb-3 mt-3 ml-60 mr-80 h">
-    <input type="text" class="form-control" placeholder="Search" id="mail" name="email">
-    <div class="input-group-append">
-      <span class="input-group-text text-light p1"><i class="fa fa-search" style="font-size:23px"></i></span>
-    </div>
-  </div>
-  </form>
+
+    <div class="bg-secondaryy c">
+        <div class="d">
+<h4 class="mt-3 ml-3 text-light p0"><i><b>Welcome to ShoppingBee!</b></i></h4>
+
+<button type="button" class="btn btn-secondary btn-text-light ml-auto b" (click)="log()"><i class="fa fa-plus-square" style="font-size:22px"></i>&nbsp;&nbsp;Login</button>
+<button type="button" class="btn btn-secondary text-light p" routerLink="/signup">SignUp</button>
+</div>
+</div>
+
+
+
+
   <nav class="navbar navbar-expand-sm k">
       <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link j " ><i class="fa fa-home" style="font-size:23px"></i>&nbsp;&nbsp;Home</a>
+          <li class="nav-item" style="margin-left:400px;">
+              <button class="btn btn-bg-light btn-block nav-link j " routerLink="/home" ><i class="fa fa-home" style="font-size:23px"></i>&nbsp;&nbsp;Home</button>
           </li>
-          <li class="nav-item">
-                <a class="nav-link j" (click)="showCategory('Electronics')"><i class="fa fa-television" style="font-size:23px"></i>&nbsp;&nbsp;Electronics</a>
+         <!----<li class="nav-item">
+                <a class="nav-link j"><i class="fa fa-television" style="font-size:23px"></i>&nbsp;&nbsp;Electronics</a>
             </li>
             <li class="nav-item">
                     <a class="nav-link j" (click)="showCategory('Clothing')"><i class="fa fa-yelp" style="font-size:23px"></i>&nbsp;&nbsp;Clothing</a>
@@ -23,19 +27,19 @@
                     </li>
                     <li class="nav-item">
                             <a class="nav-link j" (click)="showCategory('Books')"><i class="fa fa-book" style="font-size:23px"></i>&nbsp;&nbsp;Books</a>
-                        </li>
+                        </li>-->
       </ul>
   </nav>
  
   <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="1000">
+    <div class="carousel-item active" data-interval="500">
       <img src="https://giebiz.com/uploads/women_clothes_online_banner_img.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-interval="1000">
       <img src="https://i.pinimg.com/originals/e8/7b/4c/e87b4c59ebdf8bb06b867b23ea906c20.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-interval="500">
       <img src="http://dslv9ilpbe7p1.cloudfront.net/-QJ0AWKW8jwncj2CmUnMPQ_store_banner_image.jpeg" class="d-block w-100" alt="...">
     </div>
   </div>

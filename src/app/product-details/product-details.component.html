@@ -1,6 +1,6 @@
 <app-nav-bar></app-nav-bar>
 <body>
-<div class="container lk">
+<div class="container lk" *ngIf="result">
 		<div class="card">
 			<div class="container-fliud">
 				<div class="wrapper row">
@@ -25,8 +25,8 @@
 							</div>
 							<span class="review-no">41 reviews</span>
 						</div>
-						<p class="product-description">{{result.description}}</p>
-						<h4 class="price">{{result.productPrice}}</h4>
+						<p class="product-description"><b>About Product :</b>{{result.description}}</p>
+						<h4 class="price"><b> Price : </b>Rs. {{result.productPrice}}</h4>
 						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
 						<h5 class="sizes">sizes:
 							<span class="size" data-toggle="tooltip" title="small">s</span>
@@ -35,10 +35,7 @@
 							<span class="size" data-toggle="tooltip" title="xtra large">xl</span>
 						</h5>
 		
-						<div class="action">
-							<button class="add-to-cart btn btn-default " type="button">add to cart</button>
-							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
-						</div>
+						
 					</div>
 				</div>
 			</div>

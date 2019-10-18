@@ -10,18 +10,18 @@ export class DataService {
   constructor(private http:HttpClient) { }
   products()
   {
-    return this.http.get("http://localhost:8080/product/productdetails");
+    return this.http.get("http://localhost:8081/product/productdetails");
   }
   getProductByCategory(category : String)
   {
-    return this.http.get("http://localhost:8080/product/products/category/"+category);
+    return this.http.get("http://localhost:8081/product/products/category/"+category);
   }
-  getProductById(id : Number)
+  getProductsById(id : Number)
   {
-    return this.http.get("http://localhost:8080/product/productss/id/"+id);
+    return this.http.get("http://localhost:8081/product/productss/id/"+id);
   }
   getPriceBetween(p1:Number,p2:Number)
   {
-    return this.http.get("http://localhost:8080/product/getbyprice/"+p1+"/"+p2);
+    return this.http.get("http://localhost:8081/product/getbyprice/"+p1+"/"+p2);
  }
 }

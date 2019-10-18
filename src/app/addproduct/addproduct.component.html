@@ -1,0 +1,39 @@
+
+
+
+
+<div class="container-fluid d-flex justify-content-center l">
+  
+    <div class="col-sm-4 p-3 align-self-center border rounded-lg k">
+      <h3 class="text-center">Add New Product</h3>
+      <form>
+        <div class="form-group">
+          <label for="nme">Product name</label>
+          <input type="text" class="form-control" id="nme" name="prodname" [(ngModel)]="productName">
+        </div>
+        <div class="form-group">
+          <label for="price">Product Price</label>
+          <input type="text" class="form-control" id="price" name="prodprice" [(ngModel)]="productPrice">
+        </div>
+        <div class="form-group">
+            <label for="price">Product Heading</label>
+            <input type="text" class="form-control" id="price" name="prodprice" [(ngModel)]="heading">
+          </div>
+      
+        <div class="form-group">
+          <label for="sel1">Select a product category:</label>
+          <select class="form-control" id="sel1" name="cat" [(ngModel)]="category">
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Sports">Sports</option>
+            <option value="Books">Books</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">Product Detail:</label>
+          <textarea class="form-control" rows="5" id="comment" [(ngModel)]="description" name="proddetail"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" (click)="addItem()">Add Product</button>
+      </form>
+    </div>
+  </div>

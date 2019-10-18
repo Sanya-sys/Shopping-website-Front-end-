@@ -10,6 +10,6 @@ export class GetUserService {
   constructor(private http:HttpClient) { }
   post1_user(posts : posts)
   {
-     return this.http.post<any>('http://localhost:8080/users/addUsers',posts,{headers : new HttpHeaders( {'Content-Type' : 'application/json'})});
+     return this.http.post<any>('http://localhost:8081/users/addUsers',posts,{headers : new HttpHeaders( {'Content-Type' : 'application/json'})});
   }
 }

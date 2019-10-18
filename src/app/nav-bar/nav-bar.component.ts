@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../http.service';
 import { AppService } from '../app.service';
 import { Router } from '@angular/router';
 
@@ -19,5 +18,13 @@ logout()
   sessionStorage.removeItem('token');
   this.service.isLoggedIn(false);
   this.router.navigate(['login']);
+}
+cart()
+{
+  this.router.navigate(['/cart']);
+}
+log()
+{
+  this.router.navigate(['/login']);
 }
 }

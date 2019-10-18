@@ -1,7 +1,9 @@
 
 /*****************globals*************/
 body {
-    font-family: 'open sans';
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/269464574501206093/D6BEAD6CD17F75F2177AC93D8C71EFC732E8066F/");
+  font-family: 'open sans';
+  height:800px;
     overflow-x: hidden; 
   
 }

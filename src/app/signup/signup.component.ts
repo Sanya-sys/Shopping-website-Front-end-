@@ -27,11 +27,13 @@ onselect5()
   this.router.navigate(['/login'])
 }
 onsubmit()
-{ console.log(this.post1);
+{
+   console.log(this.post1);
+  this.router.navigate(['/login'])
   this.service.post1_user(this.post1).subscribe(
     data=> console.log("SUCCESS",data),
     error => console.log("ERROR",error)
-
+    
   )
 }
 }

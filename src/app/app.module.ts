@@ -13,6 +13,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
 import { HttpHeaders, HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main/main.component';
+import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { MainComponent } from './main/main.component';
     ProductDetailsComponent,
     CartComponent,
     ProfileComponent,
-    MainComponent
+    MainComponent,
+    OrderhistoryComponent,
+    AddproductComponent
   ],
   imports: [
     BrowserModule,
